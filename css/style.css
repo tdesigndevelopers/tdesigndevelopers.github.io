@@ -1,0 +1,448 @@
+:root{
+	--bg:rgb(5, 5, 7);
+	--second:#737373;
+	--span-color:#00ffcc;
+
+}
+
+html{
+	scroll-behavior: smooth;
+
+	font-family: "Courier New", Courier;
+	color:#fff;
+}
+
+body{
+	margin:0;
+	padding:0;
+	background: var(--bg);
+}
+
+.wrapper{
+	display:grid;
+}
+
+/*HEADER*/
+
+#main-header{
+	display:grid;
+	justify-items:center;
+	align-items:center;
+	background:url("../images/pic1.jpg") center center no-repeat;
+	background-size:cover;
+	height: 100vh;
+}
+
+#logo img{
+	display:grid;
+	margin: 0px auto;
+	width:20%;
+	height:auto;
+}
+
+.main-text{
+	text-align:center;
+}
+
+.main-text h1{
+	font-size:50px;
+	margin-bottom:0;
+}
+
+.main-text p{
+	color: var(--second);
+	margin-bottom:50px;
+}
+
+.name{
+	color:var(--span-color);
+}
+
+.text2{
+	text-align:center;
+}
+
+.text2 a{
+	text-decoration:none;
+	color:white;
+}
+
+
+/*SERVICES*/
+.services-container{
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+}
+
+
+.header-h1{
+	text-align:center;
+	margin-bottom:80px;
+}
+
+.header-h1 h1{
+	font-size:41px;
+}
+
+.header-h1 p {
+	color:#888;
+}
+
+.services{
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	width:85%;
+	margin:auto;
+
+}
+
+.services .box-1{
+	border:1px solid #777;
+	padding:100px;
+}
+
+.services .box-1 img{
+	display:block;
+	margin:auto;
+	width:50%;
+	padding:0;
+	height:auto;
+}
+
+.services .box-1 img:hover{
+	transform:scale(1.1);
+	transition: 0.5s;
+}
+
+.services .box-2{
+	padding-left:20px;
+	padding-right:20px;
+	text-align:center;
+	margin:auto;
+}
+
+.services .box-2 p{
+	color:#888;
+}
+
+/*RECENT WORK*/
+#recent-work{
+	background: url("../images/pic1.jpg") center center no-repeat;
+	background-size:cover;
+	height:100vh;
+	display:grid;
+	align-items:center;
+}
+
+#projects{
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	grid-gap:0.3em;
+	align-items:center;
+	margin:auto;
+}
+
+.project img{
+	display:block;
+	width:70%;
+	padding:30px;
+	height:auto;
+	margin:auto;
+	filter:grayscale(100%);
+	transition:0.5s;
+}
+
+.project img:hover{
+	filter:grayscale(0);
+	transform:scale(1.1);
+}
+
+.header-naslov{
+	text-align:center;
+}
+
+.header-naslov h1{
+	font-size:41px;
+}
+
+.header-naslov p {
+	color:#888;
+}
+
+
+/*CONTACT*/
+#contact{
+	border-top:1px solid #777;
+	border-bottom:1px solid #777;
+	height:90vh;
+}
+
+#contact h1{
+	font-size:41px;
+	text-align:center;
+}
+
+.text_pic{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+}
+
+.contact_text{
+	margin:25%;
+	width:70%;
+}
+
+.contact_text a, p{
+	text-decoration:none;
+	color:#888;
+}
+
+.contact_text hr{
+	border: 0.5px solid var(--span-color);
+	width:10%;
+}
+
+.contact_text h2{
+	font-size:32px;
+}
+
+.contact_text i{
+	color:var(--span-color);
+}
+
+.contact_img{
+	margin:auto;
+}
+
+/*FOOTER*/
+#footer-main{
+	background:;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+#footer-main p{
+	color:#555;
+	padding:0;
+}
+
+
+/* Media queries */
+@media (max-width: 992px){
+
+	/* HEADER */
+	#logo img{
+		margin: 0px auto;
+		width:30%;
+		height:auto;
+	}
+	.main-text h1{
+		font-size:40px;
+		margin-bottom:0;
+	}
+	
+	.main-text p{
+		color: var(--second);
+		margin: 30px 10%;
+	}
+
+	/* SERVICES */
+	.header-h1 h1{
+		font-size:40px;
+	}
+
+	.services{
+		display:grid;
+		grid-template-columns:repeat(2, 1fr);
+		margin:auto;
+	
+	}
+
+	.services .box-1{
+		border:none;
+		padding:0px;
+		margin: auto;
+	}
+
+	.services .box-2{
+		border:none;
+		padding:0p;
+		margin: auto;
+	}
+
+	.services .box-1 img{
+		display:block;
+		margin:auto;
+		width:25%;
+		padding:0;
+		height:auto;
+	}
+
+	/* REECETN WORK */
+
+	.header-naslov h1{
+		font-size:40px;
+	}
+	#recent-work{
+		height:auto;
+	}
+
+	#projects{
+		display:grid;
+		grid-template-columns:repeat(2, 1fr);
+		grid-gap:0.1em;
+		align-items:center;
+		margin:auto;
+	}
+
+	.project img{
+		display:block;
+		width:60%;
+		padding:5px;
+		height:auto;
+		margin:auto;
+		filter:grayscale(100%);
+		transition:0.5s;
+	}
+	
+	.project img:hover{
+		filter:grayscale(0);
+		transform:scale(1.1);
+	}
+
+	/* CONTACT */
+
+	div.contact_text{
+		margin: 0 auto;
+		
+	}
+	#contact h1{
+		font-size:40px;
+		text-align:center;
+	}
+	#contact{
+		height:auto;
+	}
+
+	#contact img{
+		width: 50%;
+		height: auto;
+		margin: 40px auto;
+	}
+	.text_pic{
+		display:grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 768px){
+
+	/* HEADER */
+	#logo img{
+		margin: 0px auto;
+		width:40%;
+		height:auto;
+	}
+	.main-text h1{
+		font-size:30px;
+		margin-bottom:0;
+	}
+	
+	.main-text p{
+		color: var(--second);
+		margin: 20px 10%;
+	}
+
+	/* SERVICES */
+	.header-h1 h1{
+		font-size:30px;
+	}
+
+	.services{
+		display:grid;
+		grid-template-columns:repeat(1, 1fr);
+		margin:auto;
+	
+	}
+
+	.services .box-1{
+		border:none;
+		padding:0px;
+	}
+
+	.services .box-2{
+		border:none;
+		padding:0px 50px;
+		margin: 0px 0 60px 0;
+	}
+
+	.services .box-1 img{
+		display:block;
+		margin:auto;
+		width:20%;
+		padding:0;
+		height:auto;
+	}
+
+	/* REECETN WORK */
+
+	.header-naslov h1{
+		font-size:30px;
+	}
+	#recent-work{
+		height:auto;
+	}
+
+	#projects{
+		display:grid;
+		grid-template-columns:repeat(1, 1fr);
+		grid-gap:0.1em;
+		align-items:center;
+		margin:auto;
+	}
+
+	.project img{
+		display:block;
+		width:60%;
+		padding:10px;
+		height:auto;
+		margin:auto;
+		filter:grayscale(100%);
+		transition:0.5s;
+	}
+	
+	.project img:hover{
+		filter:grayscale(0);
+		transform:scale(1.1);
+	}
+
+	/* CONTACT */
+
+	div.contact_text{
+		margin: 0 auto;
+		
+	}
+	#contact h1{
+		font-size:30px;
+		text-align:center;
+	}
+	#contact{
+		height:auto;
+	}
+
+	#contact img{
+		width: 50%;
+		height: auto;
+		margin: 40px auto;
+	}
+	.text_pic{
+		display:grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+}
